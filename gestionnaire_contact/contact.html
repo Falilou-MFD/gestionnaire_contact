@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telephone</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <h1>Gestion de repertoire Telephonique</h1>
+    <fieldset>
+        <legend>Ecran</legend>
+        <input type="text" id="ecran" readonly>
+    </fieldset>
+    <fieldset id = "clavier">
+        <legend>Clavier</legend>
+        <button type="button" onclick="ajouterChiffre('1')">1</button>
+        <button type="button" onclick="ajouterChiffre('2')">2</button>
+        <button type="button" onclick="ajouterChiffre('3')">3</button>
+        <button type="button" onclick="ajouterChiffre('4')">4</button>
+        <button type="button" onclick="ajouterChiffre('5')">5</button>
+        <button type="button" onclick="ajouterChiffre('6')">6</button>
+        <button type="button" onclick="ajouterChiffre('7')">7</button>
+        <button type="button" onclick="ajouterChiffre('8')">8</button>
+        <button type="button" onclick="ajouterChiffre('9')">9</button>
+        <button type="button" onclick="ajouterChiffre('0')">0</button>
+        <button type="button" onclick="appelerEcran()"> <img src="phone-outgoing.svg" alt="">  Appeler</button>
+        <button type="button" onclick="effacer()"> <img src="trash-2.svg" alt=""> Effacer</button>
+    </fieldset>
+    <fieldset>
+        <legend>Operations</legend>
+        <button type="button" onclick="ajouterContact()"><img src="user-plus.svg" alt=""> Ajouter</button>
+        <button type="button" onclick="afficherContacts()"><img src="eye.svg" alt=""> Tous les contacts</button>
+        <button type="button" onclick="afficherContact()"><img src="eye.svg" alt=""> Afficher un contact</button>
+        <button type="button" onclick="supprimerContact()"><img src="trash-2.svg" alt=""> Supprimer un contact</button>
+        <button type="button" onclick="modifierContact()"><img src="edit.svg" alt=""> Modifier un contact</button>
+        <button type="button" onclick="appeler()"> <img src="phone-outgoing.svg" alt=""> Appeler</button>
+        <button type="button" onclick="message()"> <img src="message-circle.svg" alt=""> Envoyer un message</button>
+        <button type="button" onclick="email()"> <img src="mail.svg" alt=""> Envoyer un mail</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>Sorties</legend>
+        <textarea id="sortie1" readonly></textarea>
+        <textarea id="sortie2" readonly cols = "30" rows="5">Liste des contacts</textarea>
+        <textarea id="sortie3" readonly cols="30" rows="3">Details du contact</textarea>
+        <textarea id="sortie4" readonly></textarea>
+        <textarea id="sortie5" readonly></textarea>
+        <textarea id="sortie6" readonly></textarea>
+        <textarea id="sortie7" readonly></textarea>
+        <textarea id="sortie8" readonly></textarea>
+
+    </fieldset>
+
+    <script src="code.js"></script>
+</body>
+</html>
